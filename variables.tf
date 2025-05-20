@@ -5,6 +5,17 @@ variable "resource_group_name" {
   default     = null
 }
 
+variable "project_name" {
+  description = "Project name for the resources"
+  type        = string
+}
+
+variable "repo_name" {
+  description = "name of the repository"
+  type        = string
+  default = null
+}
+
 # Location for the resources, it will be used in naming and tagging of resources
 variable "location" {
   description = "Location for the resources"
